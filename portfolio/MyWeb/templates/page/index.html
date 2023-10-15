@@ -1,0 +1,278 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="{% static 'page/style.css' %}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" >
+    </head>
+    <body class="core-colour">
+        <div class="core-bg">
+            <div class="core-outer-layout">
+                <div class="core-inner-layout">
+                    <header class="header-layout">
+                        <div class="intro-content">
+                           <h1 data-text="Hi, I'm Thinh Vu" class="intro-header">
+                                <mark class="intro-mark">Hi, I'm Thinh Vu</mark>
+                            </h1>
+                            <h2 data-text="Junior Front-end Developer" class="intro-title">
+                                <mark class="intro-mark">Junior Front-end Developer</mark>
+                            </h2>
+                            <p class="intro-text">
+                                I focus on Website development with a keen eye for creating engaging UI design
+                            </p>
+                        </div>
+                        <ul class="social-list" aria-label ="Social media">
+                            <li class="social-item">
+                                <a data-type="data-link" class="social-link" target="_blank">
+                                    <span class="sr-only">GitHub</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="social-graphic" viewBox="0 0 16 16" arial-hidden="true" fill="currentColor">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a data-type="data-link" class="social-link" target="_blank">
+                                    <span class="sr-only">Linkedin</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="social-graphic" viewBox="0 0 16 16" arial-hidden="true" fill="currentColor">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a data-type="data-link" class="social-link" target="_blank">
+                                    <span class="sr-only">Instragram</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="social-graphic" viewBox="0 0 16 16" arial-hidden="true" fill="currentColor">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a data-type="data-link" class="social-link" target="_blank">
+                                    <span class="sr-only">X-twitter</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="social-graphic" viewBox="0 0 16 16" arial-hidden="true" fill="currentColor">
+                                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </header>
+                    <main id="main-content"class="main-layout">
+                        <nav class="navbar-layout">
+                            <ul class="navbar-list">
+                                <li class="navbar-item"><a class="navbar-link navbar-active" href="#about">About</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="#project">Projects</a></li>
+                                <li class="navbar-item"><a class="navbar-link" href="#contact">Contacts</a></li>
+                                <div class="navbar-indicator transition-all"></div>
+                            </ul>
+            
+                        </nav>
+                        <div class="section-layout">
+                            <section id="about" class="about-layout" aria-label="About me">
+                                <div class="about-outer-border">
+                                    <div class="about-inner-border back-border"></div>
+                                    <div class="about-holder">
+                                        <p class="about-text">
+                                            Based in Brighton, United Kingdom. My coding journey began in 2022; I started learning basic concepts through
+                                            free online courses and Youtube videos. Fast-forwards to now, and I've worked on couple of exciting personal projects.
+                                        </p>
+                                        <p class="about-text">
+                                            My main focus now days is to work as UI/UX designer & web developer. Creating intuitive, accessible and immersive interface
+                                            for the digital experience.
+                                        </p>
+                                        <p class="about-text">
+                                            When I'm not coding, you will find me hanging out with friends, catching up on the latest shows
+                                            or most likely sleeping.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-layout" aria-label="tabs-titles">
+                                    <ul class="tab-list">
+                                        <li class="tab-item"><a id="tab1" class="tab-link tab-active" href="#frontend">Frontend development</a></li>
+                                        <li class="tab-item"><a id="tab2" class="tab-link" href="#softwaredev">Software development</a></li>
+                                        <div class="tab-line transition-all"></div>
+                                    </ul>
+                                    <div class="tab-outer-panel">
+                                        <div class="tab-inner-panel back-border"></div>
+                                        <div class="tab-holder">
+                                            <div id="frontend" class="tab-content" aria-label="tab1">
+                                                <div class="tab-grid">
+                                                    <div class="tab-graphic-holder">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="tab-graphic" viewBox="0 0 16 16" aria-hidden="true" focusable="false" fill="currentColor">
+                                                            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="tab-text">
+                                                        Passionate about website development and UI/UX. Experience in HTML, CSS and JavaScript,
+                                                        along with Sassy css and React.js framework.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div id="softwaredev" class="tab-content" aria-label="tab2">
+                                                <div class="tab-grid">
+                                                    <div class="tab-graphic-holder">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="tab-graphic" viewBox="0 0 16 16" aria-hidden="true" focusable="false" fill="currentColor">
+                                                            <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"/>
+                                                            <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"/>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="tab-text">
+                                                        Experience in functional and OOP with Python and JavaScript for web development.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="project" class="project-layout" aria-label="My projects">
+                                <div>
+                                    <ul class="project-list">
+                                        <li class="project-item">
+                                        <div class="project-grid">
+                                            <div class="project-outer-border back-border"></div>
+                                            <div class="project-holder">
+                                                <h3>
+                                                    <a class="project-link transition-all" href=" target="_blank" rel="norefferrer" aria-label="My Own Bug Tracker">
+                                                        <span class="project-inner-border"></span>
+                                                        <span class=>API
+                                                            <span class="project-arrow">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="project-graphic" aria-hidden="true">
+                                                                    <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </h3>
+                                                <p class="project-text">
+                                                    API implimentation etc.
+                                                </p>
+                                                <ul class="tech-list" aria-label="Technology used:">
+                                                    <li class="tech-item">
+                                                        <div class="tech-text">HTML</div>
+                                                    </li>
+                                                    <li class="tech-item">
+                                                        <div class="tech-text">CSS</div>
+                                                    </li>
+                                                    <li class="tech-item">
+                                                        <div class="tech-text">JavaScript</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <img alt loading="lazy" width="200" height="48" decoding="async" class="project-image transition-all" srcset="image/MOBT.jpg 1x, image/MOBT.jpg 2x" src="image/MOBT.jpg">
+                                        </div>
+                                        </li>
+                                        <li class="project-item">
+                                            <div class="project-grid">
+                                                <div class="project-outer-border back-border"></div>
+                                                <div class="project-holder">
+                                                    <h3>
+                                                        <a class="project-link transition-all" href=" target="_blank" rel="norefferrer" aria-label="My Own Bug Tracker">
+                                                            <span class="project-inner-border"></span>
+                                                            <span class=>Robot project website
+                                                                <span class="project-arrow">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="project-graphic" aria-hidden="true">
+                                                                        <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </h3>
+                                                    <p class="project-text">
+                                                        Created a fully interactable website from the ground up for team of engineers who designs robots.
+                                                    </p>
+                                                    <ul class="tech-list" aria-label="Technology used:">
+                                                        <li class="tech-item">
+                                                            <div class="tech-text">HTML</div>
+                                                        </li>
+                                                        <li class="tech-item">
+                                                            <div class="tech-text">CSS</div>
+                                                        </li>
+                                                        <li class="tech-item">
+                                                            <div class="tech-text">JavaScript</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <img alt loading="lazy" width="200" height="48" decoding="async" class="project-image transition-all" srcset="image/MOBT.jpg 1x, image/MOBT.jpg 2x" src="image/MOBT.jpg">
+                                            </div>
+                                        </li>
+                                        <li class="project-item">
+                                            <div class="project-grid">
+                                                <div class="project-outer-border back-border"></div>
+                                                <div class="project-holder">
+                                                    <h3>
+                                                        <a class="project-link transition-all" href=" target="_blank" rel="norefferrer" aria-label="My Own Bug Tracker">
+                                                            <span class="project-inner-border"></span>
+                                                            <span class=>My personal Bug Tracker
+                                                                <span class="project-arrow">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="project-graphic" aria-hidden="true">
+                                                                        <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </h3>
+                                                    <p class="project-text">
+                                                        Bug tracking website where you can submit bugs ticket to keep track. You can view, edit, flag and delete tickets.
+                                                        This website was my first web project after learning HTML, CSS and JavaScript.
+                                                    </p>
+                                                    <ul class="tech-list" aria-label="Technology used:">
+                                                        <li class="tech-item">
+                                                            <div class="tech-text">HTML</div>
+                                                        </li>
+                                                        <li class="tech-item">
+                                                            <div class="tech-text">CSS</div>
+                                                        </li>
+                                                        <li class="tech-item">
+                                                            <div class="tech-text">JavaScript</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <img alt loading="lazy" width="200" height="48" decoding="async" class="project-image transition-all" srcset="image/MOBT.jpg 1x, image/MOBT.jpg 2x" src="image/MOBT.jpg">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section id="contact" class="contact-layout" arial-label="Contact me">
+                                    <div class="contact-outer-border">
+                                        <div class="contact-inner-border back-border"></div>
+                                        <div class="contact-holder">
+                                            <p class="contact-text">
+                                                Get in touch through my socials or send me an email directly on <b>work@gmail.com</b>
+                                            </p>
+                                            <form class="form-layout" method="POST" action="">
+                                                <div class="form-field">
+                                                        <input class="form-input" id="name" type="text" name="name" placeholder="Name" aria-required="true" autocomplete="off" required>
+                                                    </div>
+                                                    <div class="form-field">
+                                                        <input class="form-input" id="email" type="email" name="email" placeholder="Email" aria-required="true" autocomplete="off" required>
+                                                    </div>
+                                                    <div class="form-field">
+                                                        <textarea class="form-input" id="message" rows="5" name="message" placeholder="Message" aria-required="true" autocomplete="off" required></textarea>
+                                                    </div>
+                                                <button class="form-btn" type="submit" aria-label="Send message">Send Message</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                            </section>
+                        </div>
+                        <footer class="footer-layout">
+                            <p class="footer-text">
+                                Designed and coded in
+                                <a href="" class="footer-link" target="_blank" rel="norefferrer">Visual Studio Code</a>
+                                by me. Built with pure HTML, CSS and JavaScript, deployed with
+                                <a href="" class="footer-link" target="_blank" rel="norefferrer">GitHub</a>
+                                page.
+                            </p>
+                        </footer>
+                    </main>
+                </div>
+            </div>
+        </div>
+       <script src="{% static 'page/navbar.js' %}"></script>
+       <script src="{% static 'page/tab.js' %}"></script>
+    </body>
+</html>
