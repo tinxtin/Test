@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="{% static 'page/style.css' %}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" >
+    </head>
+    <body class="core-colour">
+        <div class="core-bg">
+            <div class="core-outer-layout">
+                <div class="core-inner-layout">
+                    {% block body %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+       <script src="{% static 'page/navbar.js' %}"></script>
+       <script src="{% static 'page/tab.js' %}"></script>
+    </body>
+</html>
